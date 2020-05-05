@@ -14,6 +14,7 @@ public class Controls : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     private bool onGround;
+    public int treats;
 
     void FixedUpdate(){
         onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
